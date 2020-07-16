@@ -22,6 +22,20 @@
       <button>Play/Pause</button>
     </main>
 
-    <script src="/assets/index.js"></script>
+    <script>
+      const video = document.querySelector('video');
+      const button = document.querySelector('button');
+
+      function Gato(cajaArena) {
+        this.arena = cajaArena.wiskas;
+      }
+
+      Gato.prototype.raton = function() {
+        this.arena.play();
+      }
+
+      const bolaEstambre = new Gato({ wiskas: video });
+      button.onclick = () => bolaEstambre.raton();
+    </script>
   </body>
 </html>
