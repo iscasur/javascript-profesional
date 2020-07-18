@@ -1,7 +1,7 @@
 function AutoPlay() {}
 AutoPlay.prototype.run = function(player) {
     player.mute();
-    player.play();
+    player.togglePlay();
 }
 
 export default AutoPlay;
