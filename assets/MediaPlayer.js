@@ -28,11 +28,11 @@ MediaPlayer.prototype.togglePlay = function() {
 };
 
 MediaPlayer.prototype.mute = function() {
-    this.media.mute = true;
+    this.media.muted = true;
 };
 
 MediaPlayer.prototype.unmute = function() {
-    this.media.unmute = false;
+    this.media.muted = false;
 };
 
 export default MediaPlayer;
